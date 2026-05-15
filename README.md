@@ -1,4 +1,4 @@
-# llawn.nvim
+# config.nvim
 
 A Neovim configuration built on [`vim.pack`](https://neovim.io/doc/user/repeat.html#vim.pack) and the [`mini.nvim`](https://github.com/nvim-mini/mini.nvim) ecosystem.
 Heavely inspired by [`MiniMax`](https://nvim-mini.org/MiniMax/)
