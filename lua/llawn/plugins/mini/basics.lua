@@ -1,4 +1,4 @@
--- Mini.basics module for common configuration presets
+-- MiniBasics module for common configuration presets
 local basics = require("mini.basics")
 
 basics.setup({

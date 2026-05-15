@@ -1,6 +1,6 @@
--- Mini.ai module for defining and extending textobjects
+-- MiniAi module for defining and extending textobjects
 local ai = require("mini.ai")
--- Mini.extra module providing additional textobjects utilities
+-- MiniExtra module providing additional textobjects utilities
 local extra = require("mini.extra")
 
 ai.setup({
