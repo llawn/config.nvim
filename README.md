@@ -9,7 +9,7 @@ Clone the repository and symlink to your Neovim config directory:
 
 ```bash
 git clone git@github.com:llawn/nvim.git ~/.config/nvim
-```:
+```
 
 ## Features
 
