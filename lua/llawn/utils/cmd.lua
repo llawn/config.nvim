@@ -1,5 +1,7 @@
 local M = {}
 
+M.parser_root = vim.fn.expand("$HOME") .. "/.local/share/tree-sitter"
+
 M.copy_messages = function()
   local msgs = vim.fn.execute('messages')
   vim.fn.setreg('+', msgs)

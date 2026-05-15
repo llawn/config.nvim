@@ -10,4 +10,5 @@ require("llawn.config.cmd")
 require("llawn.config.pack")
 
 -- after vim.pack
+require("llawn.config.treesitter")
 require("llawn.config.lsp")
