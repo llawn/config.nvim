@@ -30,6 +30,7 @@ end
 local plugins = {
   'kdheepak/lazygit.nvim', --  git
   'mikavilpas/yazi.nvim', -- file navigation
+  'rafamadriz/friendly-snippets', -- default language snippets
 
   -- mine
   'me:pack-utils.nvim',
