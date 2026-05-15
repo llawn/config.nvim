@@ -32,6 +32,7 @@ local plugins = {
   'mikavilpas/yazi.nvim', -- file navigation
   'rafamadriz/friendly-snippets', -- default language snippets
   'rose-pine/neovim', -- colorscheme for neovim
+  'stevearc/conform.nvim', -- neovim formatter
 
   -- mine
   'me:pack-utils.nvim',
