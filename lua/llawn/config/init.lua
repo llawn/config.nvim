@@ -8,3 +8,6 @@ require("llawn.config.cmd")
 
 -- vim.pack
 require("llawn.config.pack")
+
+-- after vim.pack
+require("llawn.config.lsp")

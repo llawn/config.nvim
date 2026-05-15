@@ -30,6 +30,7 @@ end
 local plugins = {
   'kdheepak/lazygit.nvim', --  git
   'mikavilpas/yazi.nvim', -- file navigation
+  'neovim/nvim-lspconfig', -- default lspconfig
   'rafamadriz/friendly-snippets', -- default language snippets
   'rose-pine/neovim', -- colorscheme for neovim
   'stevearc/conform.nvim', -- neovim formatter
