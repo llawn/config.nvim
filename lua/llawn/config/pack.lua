@@ -29,6 +29,7 @@ end
 ---@type string[]
 local plugins = {
   'kdheepak/lazygit.nvim', --  git
+  'mikavilpas/yazi.nvim', -- file navigation
 
   -- mine
   'me:pack-utils.nvim',
