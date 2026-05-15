@@ -5,7 +5,7 @@
       "src": "https://github.com/XXiaoA/atone.nvim"
     },
     "buffer-change.nvim": {
-      "rev": "b56cf114ce04a62fcf7ede58256795bfc2697c9a",
+      "rev": "172ae402798661ca9a3de65aa7ba10f3df0235a2",
       "src": "/home/llawn/Source/buffer-change.nvim"
     },
     "conform.nvim": {
