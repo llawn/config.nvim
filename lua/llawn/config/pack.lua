@@ -31,6 +31,7 @@ local plugins = {
   'kdheepak/lazygit.nvim', --  git
   'mikavilpas/yazi.nvim', -- file navigation
   'rafamadriz/friendly-snippets', -- default language snippets
+  'rose-pine/neovim', -- colorscheme for neovim
 
   -- mine
   'me:pack-utils.nvim',
