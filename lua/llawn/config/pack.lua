@@ -33,6 +33,7 @@ local plugins = {
   'rafamadriz/friendly-snippets', -- default language snippets
   'rose-pine/neovim', -- colorscheme for neovim
   'stevearc/conform.nvim', -- neovim formatter
+  'XXiaoA/atone.nvim', --undotree
 
   -- mine
   'me:pack-utils.nvim',
