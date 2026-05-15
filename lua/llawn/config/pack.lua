@@ -39,6 +39,7 @@ local plugins = {
 
   -- local plugins
   'home:pack-utils.nvim',
+  'home:buffer-change.nvim'
 }
 
 ---Shared plugin dependencies
