@@ -1,6 +1,4 @@
 local utils = require('llawn.utils.cmd')
-local pack_ui = require('llawn.utils.pack_ui')
-local pack  = require('llawn.utils.pack')
 
 local nmap_leader = utils.nmap_leader
 local edit_config_file = utils.edit_config_file
@@ -47,11 +45,6 @@ nmap_leader('lr', '<Cmd>lua vim.lsp.buf.rename()<CR>'         , 'Rename')
 nmap_leader('lR', '<Cmd>lua vim.lsp.buf.references()<CR>'     , 'References')
 nmap_leader('ls', '<Cmd>lua vim.lsp.buf.definition()<CR>'     , 'Source definition')
 nmap_leader('lt', '<Cmd>lua vim.lsp.buf.type_definition()<CR>', 'Type definition')
-
--- p is for 'Plugins'
-nmap_leader("pp", pack_ui.open_ui   , 'Open vim.pack UI')
-nmap_leader("pu", pack.update_all   , 'Update all plugins')
-nmap_leader("px", pack_ui.del_unused, 'Delete unused plugins')
 
 -- t is for 'Terminal'
 nmap_leader('tT', '<Cmd>horizontal term<CR>', 'Terminal (horizontal)')

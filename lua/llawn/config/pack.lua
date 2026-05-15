@@ -8,6 +8,7 @@ local forges = {
   cb = 'https://codeberg.org/',
   gl = 'https://gitlab.com/',
   mini = 'https://github.com/nvim-mini/mini.',
+  me = 'https://github.com/llawn/', -- my plugins
 }
 
 ---Build a full repository URL from a shorthand package path.
@@ -23,6 +24,13 @@ local function pkg(path)
   local prefix, repo = path:match("^(%w+):(.+)$")
   return (forges[prefix] or forges.gh) .. (repo or path)
 end
+
+---Additional third-party plugins.
+---@type string[]
+local plugins = {
+  -- mine
+  'me:pack-utils.nvim',
+}
 local specs = {}
 for name, opts in pairs(mini_plugins) do
   -- Skip if the value is boolean false
@@ -32,6 +40,9 @@ for name, opts in pairs(mini_plugins) do
     local repo_name = (name == "git") and "nvim-mini/mini-git" or "mini:" .. name
     table.insert(specs, { src = pkg(repo_name) })
   end
+end
+for _, path in ipairs(plugins) do
+  table.insert(specs, { src = pkg(path) })
 end
 vim.pack.add(specs)
 
