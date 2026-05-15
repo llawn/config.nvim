@@ -8,7 +8,8 @@ local forges = {
   cb = 'https://codeberg.org/',
   gl = 'https://gitlab.com/',
   mini = 'https://github.com/nvim-mini/mini.',
-  me = 'https://github.com/llawn/', -- my plugins
+  llawn = 'https://github.com/llawn/',
+  home = vim.fn.expand('~/Source/'),
 }
 
 ---Build a full repository URL from a shorthand package path.
@@ -36,8 +37,8 @@ local plugins = {
   'stevearc/conform.nvim', -- neovim formatter
   'XXiaoA/atone.nvim', --undotree
 
-  -- mine
-  'me:pack-utils.nvim',
+  -- local plugins
+  'home:pack-utils.nvim',
 }
 
 ---Shared plugin dependencies

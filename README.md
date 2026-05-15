@@ -10,6 +10,25 @@ Clone the repository and symlink to your Neovim config directory:
 ```bash
 git clone git@github.com:llawn/nvim.git ~/.config/nvim
 ```
+## Setup
+
+:warning: My config uses local plugins as I use them for my personal config.
+This will breaks your configuration.
+
+In order to solve this problem edit `llawn.config.pack`:
+
+```
+local plugins = {
+  'kdheepak/lazygit.nvim',
+  ...
+
+  -- local plugins
+  'home:pack-utils.nvim',
+  ...
+}
+```
+
+By changing all `home:` to `llawn:`, it will lookup to my remote repositories instead.
 
 ## Features
 

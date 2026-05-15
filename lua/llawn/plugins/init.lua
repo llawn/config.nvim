@@ -10,5 +10,5 @@ require("llawn.plugins.atone")
 require("llawn.plugins.conform")
 require("llawn.plugins.lazygit")
 
--- My plugins
-require("llawn.plugins.me")
+-- My local plugins
+require("llawn.plugins.home")
