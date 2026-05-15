@@ -28,10 +28,20 @@ end
 ---Additional third-party plugins.
 ---@type string[]
 local plugins = {
+  'kdheepak/lazygit.nvim', --  git
+
   -- mine
   'me:pack-utils.nvim',
 }
+
+---Shared plugin dependencies
+---@type string[]
+local deps = {
+  'nvim-lua/plenary.nvim' -- yazi, lazygit
+}
+
 local specs = {}
+
 for name, opts in pairs(mini_plugins) do
   -- Skip if the value is boolean false
   local is_enabled = opts ~= false
@@ -41,9 +51,15 @@ for name, opts in pairs(mini_plugins) do
     table.insert(specs, { src = pkg(repo_name) })
   end
 end
+
+for _, path in ipairs(deps) do
+  table.insert(specs, { src = pkg(path) })
+end
+
 for _, path in ipairs(plugins) do
   table.insert(specs, { src = pkg(path) })
 end
+
 vim.pack.add(specs)
 
 require("llawn.plugins")
